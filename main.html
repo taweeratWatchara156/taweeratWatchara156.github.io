@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>MoodHealth</title>
+</head>
+<body class="flex flex-col bg-[#FCF0DA] gap-5 p-5">
+    <nav class="flex justify-between items-center bg-[#4C4541] rounded-md p-5 shadow-xl">
+        <div class="flex text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-white">
+            <h1>Mood</h1>
+            <h1 class="text-[#F2C46A]">Health</h1>
+        </div>
+
+        
+        <a href="https://github.com/taweeratWatchara156/MoodGarden"><img src="image/github-icon.png" alt="github-icon" class="w-8 h-8 rounded-lg cursor-pointer"/></a>
+    </nav>
+
+    <div class="flex flex-col items-center gap-3 bg-white border-gray-200 border p-5 rounded-md shadow-md">
+        <div class="w-fit flex text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-white bg-[#4C4541] px-3 py-1 rounded-md">
+            <h1>Mood</h1>
+            <h1 class="text-[#F2C46A]">Health</h1>
+        </div>
+        
+        <p class="text-sm sm:text-base lg:text-lg text-[#4C4541] text-center"><b>MoodHealth</b> คืออุปกรณ์ IOT ที่ใช้ในการเช็คสุขภาพของดินสำหรับปลูกพืชคร่าวๆ โดยสามารถเช็ค อุณหภูมิ, ความชื้น ของดินได้ผ่านจอ LCD หรือว่าผ่าน Web app และ สามารถเตือนรดน้ำต้นไม้ได้หากว่าความชื้นน้อยเกินไป</p>
+    </div>
+
+    <div class="flex flex-col items-center gap-5 bg-white border-gray-200 border p-5 rounded-md shadow-md">
+        <div class="w-fit flex text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-white bg-[#4C4541] px-3 py-1 rounded-md">
+            <h1>Modules we use</h1>
+        </div>
+        
+        <div class="flex flex-col xl:flex-row gap-10">
+            <div class="flex flex-col items-center gap-2 p-5 bg-[#FCF0DA]/30 rounded-md border border-gray-200 ">
+                <h1 class="text-base sm:text-lg md:text-xl font-bold text-[#4C4541]">Moisture Sensor</h1>
+                <img src="image/moisture-sensor.jpg" alt="" class="h-[150px] sm:h-[200px] md:h-[300px]">
+            </div>
+            <div class="flex flex-col items-center gap-2 p-5 bg-[#FCF0DA]/30 rounded-md border border-gray-200 ">
+                <h1 class="text-base sm:text-lg md:text-xl text-center font-bold text-[#4C4541]">Temperature Sensor ( DS18B20 )</h1>
+                <img src="image/temp-sensor.png" alt="" class="h-[150px] sm:h-[200px] md:h-[300px]">
+            </div>
+            <div class="flex flex-col items-center gap-2 p-5 bg-[#FCF0DA]/30 rounded-md border border-gray-200 ">
+                <h1 class="text-base sm:text-lg md:text-xl font-bold text-[#4C4541]">LCD Module</h1>
+                <img src="image/lcd-module.jpg" alt="" class="h-[150px] sm:h-[200px] md:h-[300px]">
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col items-center gap-5 bg-white border-gray-200 border p-5 rounded-md shadow-md">
+        <div class="w-fit flex text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-white bg-[#4C4541] px-3 py-1 rounded-md">
+            <h1 class="text-center">Web Application ( MoodHealth Monitor )</h1>
+        </div>
+
+        
+        <img src="image/web-application.png" alt="" class="h-[150px] sm:h-[200px] md:h-[300px] lg:h-[500px]">
+        <p class="text-xs sm:text-sm md:text-base lg:text-lg text-[#4C4541] text-center">โดยตัว Web App จะสามารถแสดงได้ทั้งค่าความชื้น, และ อุณหภูมิของดิน <br> พร้อมทั้งแสดงสถานะว่าอุณหภูมิ, และความชื้นอยู่ในระดับปกติหรือไม่</p>
+    </div>
+
+    <div class="flex flex-col items-center gap-5 bg-white border-gray-200 border p-5 rounded-md shadow-md">
+        <div class="w-fit flex text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-white bg-[#4C4541] px-3 py-1 rounded-md">
+            <h1>ระบบเตือนลดน้ำต้นไม้</h1>
+        </div>
+
+        
+        <img src="image/watering-alert.png" alt="" class="h-[80px] sm:h-[150px] lg:h-[300px]">
+        <p class="text-xs sm:text-sm md:text-base lg:text-lg text-[#4C4541] text-center">ระบบจะเตือนลดน้ำต้นไม้ หากความชื้นของดินน้อยเกินไปพร้อมแสดงชื่อ และ สถานที่ของต้นไม้ที่ได้ตั้งเอาไว้ 
+            <br> และถ้ากดปุ่ม "รดน้ำแล้ว" แล้วค่าความชื้นปกติปุ่มก็จะหายไป</p>
+    </div>
+
+    <div class="flex flex-col items-center gap-5 bg-white border-gray-200 border p-5 rounded-md shadow-md">
+        <div class="w-fit flex text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-white bg-[#4C4541] px-3 py-1 rounded-md">
+            <h1>Abstract ( บทคัดย่อ ) </h1>
+        </div>
+
+        <p class="text-xs sm:text-sm md:text-base lg:text-lg text-[#4C4541] text-center w-auto sm:w-[500px] lg:w-[1000px]">
+                       โครงงานนี้มีวัตถุประสงค์เพื่อพัฒนาระบบตรวจวัดและแจ้งเตือนสภาพแวดล้อมที่เกี่ยวข้องกับการปลูกพืชผักสวนครัวและไม้ดอกขนาดเล็ก 
+                       เพื่ออำนวยความสะดวกให้แก่ผู้ที่สนใจเริ่มต้นปลูกพืชและผู้ที่ต้องการดูแลพืชให้เหมาะสมกับความต้องการพื้นฐานของพืชแต่ละชนิด 
+                       โดยใช้บอร์ดอาร์ดูโน่ร่วมกับ
+                       เซ็นเซอร์วัดความชื้น, เซนเซอร์วัดอุณหภูมิ, และ จอ LCD ในการพัฒนาและตรวจวัดข้อมูลที่เกี่ยวข้อง
+                        ได้แก่ ... จากนั้นนำข้อมูลที่ได้มาแสดงผลบนหน้าจอlcdและบนเว็บไซต์
+        </p>
+    </div>
+
+    <div class="flex flex-col items-center gap-5 bg-white border-gray-200 border p-5 rounded-md shadow-md">
+        <div class="flex flex-col sm:flex-row gap-5">
+            <a href="" class="flex items-center gap-2 p-3 border border-gray-200  rounded-2xl font-bold text-white bg-[#FCF0DA]">
+                <img src="image/youtube.png" alt="youtube" class="w-[30px] md:w-[50px] lg:w-[80px]">
+                <h1 class="text-base sm:text-xl md:text-2xl lg:text-3xl text-[#4C4541]">Video Presentation</h1>
+            </a>
+            <a href="https://github.com/taweeratWatchara156/MoodGarden" class="flex items-center gap-2 p-3 border border-gray-200  rounded-2xl font-bold text-white bg-[#FCF0DA]">
+                <img src="image/code.png" alt="youtube" class="w-[20px] md:w-[30px] lg:w-[50px]">
+                <h1 class="text-base sm:text-xl md:text-2xl lg:text-3xl text-[#4C4541]">Source Code</h1>
+            </a>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-5">
+            <a href="https://pc-moodgarden.netlify.app/main_page" class="flex items-center gap-2 p-3 border border-gray-200  rounded-2xl font-bold text-white bg-[#FCF0DA]">
+                <img src="image/website.png" alt="youtube" class="w-[20px] md:w-[30px] lg:w-[50px]">
+                <h1 class="text-base sm:text-xl md:text-2xl lg:text-3xl text-[#4C4541]">Web Application</h1>
+            </a>
+            <a href="" class="flex items-center gap-2 p-3 border border-gray-200  rounded-2xl font-bold text-white bg-[#FCF0DA]">
+                <img src="image/poster.png" alt="youtube" class="w-[20px] md:w-[30px] lg:w-[50px]">
+                <h1 class="text-base sm:text-xl md:text-2xl lg:text-3xl text-[#4C4541]">Project Poster</h1>
+            </a>
+        </div>
+    </div>
+
+    <div class="flex flex-col items-center gap-5 bg-white border-gray-200 border p-5 rounded-md shadow-md">
+        <div class="w-fit flex text-base sm:text-xl md:text-2xl lg:text-3xl font-bold text-white bg-[#4C4541] px-3 py-1 rounded-md">
+            <h1>About us</h1>
+        </div>
+        
+        <div class="flex flex-col sm:flex-row gap-5">
+            <div class="flex items-center gap-3 p-3 border border-gray-200  rounded-2xl font-bold text-white bg-[#FCF0DA]">
+                <img src="image/cat.png" alt="youtube" class="w-[40px] md:w-[50px] lg:w-[80px] rounded-xl">
+                <div class="flex flex-col text-[#4C4541]">
+                    <h1 class="text-sm sm:text-base md:text-xl lg:text-2xl">Taweerat Watcharamanokarn</h1>
+                    <h1 class="text-sm sm:text-base md:text-xl lg:text-2xl">68070050</h1>
+                </div>
+            </div>
+            
+            <div class="flex items-center gap-3 p-3 border border-gray-200  rounded-2xl font-bold text-white bg-[#FCF0DA]">
+                <img src="image/cat.png" alt="youtube" class="w-[40px] md:w-[50px] lg:w-[80px] rounded-xl">
+                <div class="flex flex-col text-[#4C4541]">
+                    <h1 class="text-sm sm:text-base md:text-xl lg:text-2xl">Taweerat Watcharamanokarn</h1>
+                    <h1 class="text-sm sm:text-base md:text-xl lg:text-2xl">68070050</h1>
+                </div>
+            </div>
+        </div>
+
+        
+        
+        <div class="flex gap-5">
+            <div class="flex items-center gap-3 p-3 border border-gray-200  rounded-2xl font-bold text-white bg-[#FCF0DA]">
+                <img src="image/cat.png" alt="youtube" class="w-[40px] md:w-[50px] lg:w-[80px] rounded-xl">
+                <div class="flex flex-col text-[#4C4541]">
+                    <h1 class="text-sm sm:text-base md:text-xl lg:text-2xl">Taweerat Watcharamanokarn</h1>
+                    <h1 class="text-sm sm:text-base md:text-xl lg:text-2xl">68070050</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
